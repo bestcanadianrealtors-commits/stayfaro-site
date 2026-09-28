@@ -1,0 +1,145 @@
+/* Faro — stayfaro.app. Cardinal Light: navy tower, gold beam. Matches the app's palette. */
+:root {
+  --navy: #1F3864;
+  --navy-deep: #16294A;
+  --gold: #C9A227;
+  --gold-pale: #F5E9C4;
+  --gold-text: #8A6D0F;
+  --bg: #F8F7F4;
+  --card: #FFFFFF;
+  --border: #E4E1DB;
+  --text: #1A1A2E;
+  --text-2: #5A6272;
+  --muted: #687080;
+  --ink: #1F3864;
+  --on-navy: #E8EAF0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gold-pale: #2C2614;
+    --gold-text: #E8C158;
+    --bg: #0E1016;
+    --card: #181B23;
+    --border: #2E3440;
+    --text: #ECEEF3;
+    --text-2: #AEB4C2;
+    --muted: #8A91A0;
+    --ink: #AFC3EE;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--gold-text); }
+
+/* ── Masthead: the mark, the wordmark, the tagline ── */
+.mast {
+  background: var(--navy);
+  color: var(--on-navy);
+  padding: 48px 16px 40px;
+  text-align: center;
+}
+.mast svg { width: 84px; height: 84px; display: block; margin: 0 auto; }
+.mast .word {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 300;
+  font-size: 52px;
+  letter-spacing: 6px;
+  margin: 14px 0 0;
+  color: #fff;
+  line-height: 1;
+}
+.mast .rule { width: 110px; height: 1.5px; background: var(--gold); margin: 16px auto; }
+.mast .tag {
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 4.5px;
+  opacity: .85;
+  margin: 0;
+}
+.mast nav { margin-top: 26px; font-size: 13px; letter-spacing: .4px; }
+.mast nav a { color: rgba(232,234,240,.75); text-decoration: none; margin: 0 10px; }
+.mast nav a:hover { color: var(--gold); }
+
+/* ── Content ── */
+main { max-width: 720px; margin: 0 auto; padding: 8px 16px 56px; }
+h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(30px, 6vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -.3px;
+  margin: 40px 0 14px;
+}
+h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  margin: 44px 0 12px;
+}
+h3 { font-size: 16px; font-weight: 600; margin: 22px 0 6px; }
+p { margin: 0 0 14px; }
+.lede { font-size: 19px; color: var(--text-2); }
+.eyebrow {
+  font-size: 11px; font-weight: 800; letter-spacing: 2.4px; text-transform: uppercase;
+  color: var(--gold-text); margin: 40px 0 6px;
+}
+.eyebrow + h2 { margin-top: 0; }
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+/* Pillars */
+.pillars { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; }
+.pillars li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.pillars b { display: block; font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 18px; margin-bottom: 3px; }
+.pillars span { color: var(--text-2); font-size: 15px; }
+
+.callout {
+  background: var(--gold-pale);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 22px 0;
+  color: var(--text);
+}
+.callout p { margin: 0; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 18px 0;
+}
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--border); }
+th { font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+td:first-child { font-weight: 600; width: 34%; }
+
+.meta { color: var(--muted); font-size: 14px; }
+
+footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13.5px;
+  text-align: center;
+  padding: 24px 16px 40px;
+}
+footer a { color: var(--muted); margin: 0 8px; }

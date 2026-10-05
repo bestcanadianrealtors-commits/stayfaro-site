@@ -28,7 +28,7 @@
 
 <main>
   <h1>Privacy policy</h1>
-  <p class="meta">Effective 28 September 2026. Applies to the Faro app and to stayfaro.app.</p>
+  <p class="meta">Effective 4 October 2026. Applies to the Faro app and to stayfaro.app.</p>
   <p class="lede">
     Faro exists to hold you to your own calendar. To do that it needs to read your
     calendar and remember what you answer. This page says exactly what it collects,
@@ -46,13 +46,14 @@
   <table>
     <tr><th>Data</th><th>Why</th></tr>
     <tr><td>Your Google account name and email</td><td>To sign you in and to know whose data is whose.</td></tr>
-    <tr><td>Google Calendar events: title, start and end time, location, description, colour, and whether they repeat</td><td>To schedule reminders, ask whether you finished, and work out when you need to leave. Read-only: Faro never creates, changes, or deletes an event.</td></tr>
+    <tr><td>Google Calendar events: title, start and end time, location, description, colour, and whether they repeat</td><td>To schedule reminders, ask whether you finished, and work out when you need to leave. Faro creates, changes or deletes an event only when you ask it to, one event at a time. Nothing is changed in the background.</td></tr>
+    <tr><td>Google Tasks on your main list: title, notes, due date, and whether it is done</td><td>To show what is due today, and to add, change, tick off or delete a task when you ask. Tasks are read when you open Faro and are not stored on Faro's servers.</td></tr>
     <tr><td>Your plan settings, including your home and office addresses if you enter them</td><td>Your Day 1, alarms, and the starting point for drive-time checks.</td></tr>
     <tr><td>Goals, and the name and phone number of an accountability person if you enter one</td><td>Streaks per goal, and the one-tap text or call when you hit a milestone or reset.</td></tr>
     <tr><td>Your answers to "Did you finish?", streak counts, and bedtime and wake-up taps</td><td>The streak engine.</td></tr>
     <tr><td>Thoughts you capture in the inbox</td><td>The daily Clarify ritual.</td></tr>
     <tr><td>Transactions from bank statement files you choose to upload: date, description, amount</td><td>The Money Mirror. Statements are read on your device and only the transactions are stored. Faro never connects to your bank.</td></tr>
-    <tr><td>A push notification token for your phone</td><td>So reminders reach you when the app is closed.</td></tr>
+    <tr><td>A push notification address for your phone, and for your browser if you turn browser notifications on</td><td>So reminders reach you when the app, or its browser tab, is closed.</td></tr>
     <tr><td>Drive-time checks: origin, destination, and minutes</td><td>To tell you when to leave.</td></tr>
   </table>
   <p>Faro has no advertising, no analytics trackers, and does not collect your location from the phone. Where you are comes only from the addresses on your calendar and the ones you type in.</p>
@@ -69,9 +70,11 @@
   <h2>Who else sees it</h2>
   <p>Faro shares data only with the services it needs to work, and only the piece each one needs:</p>
   <ul>
-    <li><b>Google Calendar</b> — Faro reads your events with the read-only permission you grant when you sign in.</li>
+    <li><b>Google Calendar</b> — Faro reads your events, and creates, changes or deletes one when you ask, with the permission you grant when you sign in ("View and edit events on all your calendars").</li>
+    <li><b>Google Tasks</b> — Faro reads your tasks, and adds, changes or deletes one when you ask ("Create, edit, organize, and delete all your tasks"). Faro asks for nothing else in your Google account.</li>
     <li><b>Google Maps (Routes)</b> — the origin and destination addresses of a trip, to get a live drive time.</li>
     <li><b>Expo and Apple push services</b> — your push token and the text of each reminder, to deliver it to your phone.</li>
+    <li><b>Your browser's notification service</b> (Google, Mozilla, Microsoft or Apple, depending on the browser) — each reminder, encrypted so that only your browser can read it, and only if you turn browser notifications on.</li>
     <li><b>Waze</b> — a destination address, only when you tap "Open in Waze".</li>
   </ul>
   <p>Faro does not sell your data, share it with advertisers, or use it to train anything.</p>
@@ -81,8 +84,9 @@
     Faro's use and transfer to any other app of information received from Google APIs
     adheres to the
     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
-    including the Limited Use requirements. Calendar data is used only to provide the
-    reminders, confirmations, and travel checks you see in the app. It is never used
+    including the Limited Use requirements. Calendar and task data is used only to provide the
+    reminders, confirmations, travel checks and lists you see in the app, and to carry out
+    the changes you ask for. It is never used
     for advertising, never sold, and never read by a person except with your
     permission to fix a problem you report.
   </p>
@@ -109,6 +113,13 @@
   <p>
     If this policy changes in a way that matters, the date at the top changes and the
     change is described here.
+  </p>
+  <p>
+    <b>4 October 2026.</b> Faro can now create, change and delete calendar events and
+    Google tasks when you ask it to, so it asks Google for permission to edit events and
+    tasks, where before it could only read the calendar. Browser notifications were
+    added: if you turn them on, reminders are sent to your browser through its
+    notification service.
   </p>
 </main>
 

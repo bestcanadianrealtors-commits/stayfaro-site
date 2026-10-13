@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faro — How to use it</title>
+  <meta name="description" content="A simple guide to Faro: setting up, what each screen does, what Faro says and when, streaks, goals, Clarify, priorities, money and the weekly review.">
+  <meta name="theme-color" content="#1F3864">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231F3864'/%3E%3Cpolygon points='52,33 97,17 97,57 52,37' fill='%23F5E9C4' opacity='.92'/%3E%3Crect x='94' y='17' width='3.5' height='40' fill='%23C9A227'/%3E%3Cpath d='M46 14 L50 6 L54 14 Z' fill='%23F8F7F4'/%3E%3Ccircle cx='50' cy='17' r='4.2' fill='%23F8F7F4'/%3E%3Crect x='45' y='21' width='10' height='6' fill='%23F8F7F4'/%3E%3Crect x='41' y='29' width='18' height='3.2' rx='1' fill='%23F8F7F4'/%3E%3Cpolygon points='44,33 56,33 58.5,78 41.5,78' fill='%23F8F7F4'/%3E%3Crect x='38' y='78' width='24' height='7' rx='1' fill='%23F8F7F4'/%3E%3Crect x='24' y='90' width='52' height='3' rx='1.5' fill='%23F8F7F4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    ol { padding-left: 22px; }
+    ol li { margin-bottom: 10px; }
+    .toc { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 6px; grid-template-columns: 1fr 1fr; }
+    .toc a { text-decoration: none; display: block; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px; font-size: 14.5px; font-weight: 500; }
+    .toc a:hover { border-color: var(--gold); }
+    kbd { font-family: Inter, system-ui, sans-serif; font-size: 13px; font-weight: 600; background: var(--card); border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 5px; padding: 1px 7px; }
+    .tap { font-weight: 600; color: var(--ink); }
+    .tier { display: inline-block; width: 22px; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 18px; }
+    @media (max-width: 480px) { .toc { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="mast" style="padding-top:34px;padding-bottom:30px">
+  <a href="index.html" style="text-decoration:none">
+    <p class="word" style="font-size:36px;margin-top:0">faro</p>
+  </a>
+  <div class="rule" style="width:80px;margin:12px auto"></div>
+  <p class="tag">HOW TO USE FARO</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="app/">Open the app</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="index.html#support">Support</a>
+  </nav>
+</header>
+
+<main>
+  <h1>How to use Faro</h1>
+  <p class="meta">Updated 13 October 2026.</p>
+  <p class="lede">
+    Faro holds you to your own calendar. You put your day on the calendar. Faro speaks up
+    before and after each event, asks whether you finished, and keeps a streak for every
+    goal. This page shows what to tap, screen by screen.
+  </p>
+
+  <ul class="toc">
+    <li><a href="#start">1. First-time setup</a></li>
+    <li><a href="#tabs">2. The four tabs and the + button</a></li>
+    <li><a href="#today">3. Today, from the top</a></li>
+    <li><a href="#reminders">4. What Faro says, and when</a></li>
+    <li><a href="#streaks">5. Streaks</a></li>
+    <li><a href="#goals">6. Goals and routines</a></li>
+    <li><a href="#clarify">7. Capture, Clarify, Matrix</a></li>
+    <li><a href="#priorities">8. Priorities A, B, C</a></li>
+    <li><a href="#money">9. Money</a></li>
+    <li><a href="#review">10. The reviews</a></li>
+    <li><a href="#settings">11. Settings</a></li>
+    <li><a href="#help">12. When something looks wrong</a></li>
+  </ul>
+
+  <p class="eyebrow" id="start">1</p>
+  <h2>First-time setup</h2>
+  <ol>
+    <li>Open Faro. On an iPhone, install it from TestFlight. In a browser, go to <a href="app/">stayfaro.app/app</a>.</li>
+    <li>Tap <span class="tap">Continue with Google</span>. Finish the Google screens within five minutes. Allow Faro to see and change your calendar and tasks. Faro only changes something when you tap Save or Delete.</li>
+    <li><b>The anchor.</b> Enter your Day 1 (the date the journey starts), the total days (810), and a name for the destination.</li>
+    <li><b>Where you are.</b> Enter where your day starts (home) and your office. Faro uses them to tell you when to leave, with live traffic.</li>
+    <li><b>The sleep contract.</b> Enter when wind-down starts, lights out by, and your wake-up time.</li>
+    <li>Tap <span class="tap">Light the lamp</span>. When the phone asks about notifications, tap <span class="tap">Allow</span>.</li>
+  </ol>
+  <div class="callout">
+    <p>In a browser: open Settings (the <b>⚙</b> at the top right of Today) and turn on
+    <b>Browser notifications</b>. Reminders then reach you even with the tab closed.</p>
+  </div>
+
+  <p class="eyebrow" id="tabs">2</p>
+  <h2>The four tabs and the + button</h2>
+  <ul class="pillars">
+    <li><b>TODAY</b><span>Your day, top to bottom: where you are now, what is waiting for an answer, your priorities, what is next.</span></li>
+    <li><b>MONEY</b><span>Bank statements, spending by area of life, runway, savings goals.</span></li>
+    <li><b>GOALS</b><span>One goal per area of life, each with its own streak and routine.</span></li>
+    <li><b>REVIEW</b><span>Clarify, the Matrix, the weekly review, the monthly review, the VA queue.</span></li>
+  </ul>
+  <p style="margin-top:16px">
+    The gold <span class="tap">+</span> is on every tab. Tap it, type whatever is on your mind,
+    and it is captured. You decide what it becomes later, in Clarify. Nothing is lost.
+  </p>
+
+  <p class="eyebrow" id="today">3</p>
+  <h2>Today, from the top</h2>
+  <ol>
+    <li><b>The chapter bar.</b> Day X of 810, the chapter you are in, and when the calendar was last synced. Pull down to sync now.</li>
+    <li><b>NOW.</b> The block you are in and the minutes left, or what comes next, or what today added up to.</li>
+    <li><b>Wake-up and Bedtime rows.</b> Tap each one when it is done. Wake-up counts until 45 minutes after the alarm. Bedtime counts from three hours before wind-down until lights out. Each has its own streak.</li>
+    <li><b>AWAITING YOUR ANSWER.</b> An event ended and Faro asked <em>Did you finish?</em> Tap <span class="tap">Yes</span>, <span class="tap">Partial</span> or <span class="tap">No</span>. You have ten minutes. After that it counts as a miss. You can change an answer for two minutes after giving it.</li>
+    <li><b>TODAY'S PRIORITIES.</b> The day as a ranked list, A, B and C. See <a href="#priorities">section 8</a>.</li>
+    <li><b>NEXT UP.</b> The rest of today's events. Tap one to open it. Tap its gear to change the category, mute it, send it to your VA, or edit, move or delete it. <span class="tap">+ Event</span> adds an event to your Google Calendar.</li>
+    <li><b>Take today off.</b> Nothing is asked of you today. Answers already given stand. The sleep contract still counts. An all-day event called <em>Day off</em> or <em>Vacation</em> on your calendar does the same.</li>
+  </ol>
+
+  <p class="eyebrow" id="reminders">4</p>
+  <h2>What Faro says, and when</h2>
+  <p>Faro speaks, and the banner shows the details. It works with the app closed.</p>
+  <table>
+    <tr><th>When</th><th>What you hear</th><th>Buttons on the lock screen</th></tr>
+    <tr><td>10 minutes before an event starts</td><td>Starts in ten minutes.</td><td>I am on it · Snooze 5</td></tr>
+    <tr><td>11 and 5 minutes before it ends</td><td>Start wrapping up. Move to next.</td><td>Acknowledged</td></tr>
+    <tr><td>3 minutes after it ends</td><td>Did you finish?</td><td>Yes · Partial · No</td></tr>
+    <tr><td>When you have to drive somewhere</td><td>Drive time with live traffic, and when to leave.</td><td>On my way</td></tr>
+    <tr><td>A free half hour between tasks</td><td>Which project needs a check-in?</td><td>Acknowledged</td></tr>
+    <tr><td>Wind-down, lights out</td><td>Wind-down starts. Lights out now.</td><td>Lights out ✓</td></tr>
+    <tr><td>Wake-up</td><td>Good morning, then today's must-dos.</td><td>I'm up ✓</td></tr>
+    <tr><td>09:30 daily</td><td>Clarify. Ten minutes.</td><td></td></tr>
+    <tr><td>Sunday 18:00</td><td>Weekly review. Not skippable.</td><td></td></tr>
+    <tr><td>21:00</td><td>Your day: what got finished, what tomorrow opens with.</td><td></td></tr>
+  </table>
+  <p>
+    With the app open, a card shows the meeting's time, place and who is coming while Faro speaks.
+    Inside your silent hours the banner comes without the voice. Wind-down and wake-up always speak.
+    Each goal can have its own lead time before the start, from 5 to 60 minutes.
+  </p>
+
+  <p class="eyebrow" id="streaks">5</p>
+  <h2>Streaks</h2>
+  <ul>
+    <li><b>Yes</b> adds one to the goal's streak.</li>
+    <li><b>Partial</b> holds the streak. Three partials in a row reset it.</li>
+    <li><b>No</b>, or no answer within ten minutes, is a miss. Two misses in a row reset it.</li>
+    <li>Each goal has a reward ladder and a consequence ladder. Faro tells you which rung you reached.</li>
+    <li>Name the person who holds you to a goal. In the weekly review, one tap texts them how the week went.</li>
+    <li>The GOALS tab shows every streak, the last seven answers, and a twelve-week heatmap per goal.</li>
+  </ul>
+
+  <p class="eyebrow" id="goals">6</p>
+  <h2>Goals and routines</h2>
+  <ol>
+    <li>GOALS tab → <span class="tap">+</span> (or <span class="tap">Create your first goal</span>).</li>
+    <li>Give it a name, pick one of the seven areas of life, and write your <b>definition of enough</b>: the number that means the goal is met.</li>
+    <li><b>ROUTINE.</b> Add the tasks that make the goal happen, each with a start and an end time. Choose the weekdays, or leave it as a one-off. Tap <span class="tap">Add to calendar</span> and each task becomes its own event in Google Calendar (a weekly series when days are chosen). From then on Faro reminds you, asks whether you finished, and the streak counts it.</li>
+    <li>Name who holds you to it, add a reward ladder and a consequence ladder, and set the reminder lead in minutes.</li>
+    <li>Tap <span class="tap">Save</span>.</li>
+  </ol>
+  <p>
+    Faro files calendar events under goals by their title. If one lands in the wrong place,
+    open the event, tap its gear, and tap the right category. Faro learns the title for next time.
+  </p>
+
+  <p class="eyebrow" id="clarify">7</p>
+  <h2>Capture, Clarify, Matrix</h2>
+  <ol>
+    <li>Tap <span class="tap">+</span>, type the thought, done. Do this all day; it takes two seconds.</li>
+    <li>REVIEW tab → <span class="tap">Clarify</span>. Faro reminds you at 09:30. For each thought it asks <em>Where does it sit?</em>
+      <ul>
+        <li><b>Do today</b> — urgent and important. Goes on today's calendar.</li>
+        <li><b>Schedule</b> — important, not urgent. Faro proposes a time next weekday.</li>
+        <li><b>Delegate</b> — urgent, not important. A one-line handoff opens, ready to send to your VA.</li>
+        <li><b>Drop</b> — neither. Gone, but visible in the Matrix for thirty days.</li>
+        <li>Or <b>Someday / maybe</b> and <b>Reference</b>, when it is not a task at all.</li>
+      </ul>
+    </li>
+    <li>For Do today and Schedule, pick which goal it serves, then <span class="tap">Put it on the calendar</span> (you save the event) or <span class="tap">Make it a task</span> (a Google task with a day, no time).</li>
+    <li>REVIEW → <span class="tap">Open the Matrix</span> shows all four boxes. Tap an item to finish it, act on it, or move it. More than eight in one box is Faro's sign that the plan has stopped being real.</li>
+    <li>Spending that Faro could not file shows up in Clarify too. Tap the area of life that paid for it.</li>
+  </ol>
+
+  <p class="eyebrow" id="priorities">8</p>
+  <h2>Priorities A, B, C</h2>
+  <p>On Today, the day is ranked:</p>
+  <ul>
+    <li><span class="tier" style="color:#B3261E">A</span> <b>Must happen today.</b> Your goal tasks on today's calendar, and every <em>Do today</em> item from the matrix. One you did not finish rolls into the next day in red, marked <em>since Mon</em>.</li>
+    <li><span class="tier" style="color:#2E7D32">B</span> <b>Placed today.</b> <em>Schedule</em> items you put on today's calendar, and Google tasks due today or earlier. Late ones show in red.</li>
+    <li><span class="tier">C</span> <b>Waiting on others.</b> A count of what is with your VA. Tap it to open the Matrix.</li>
+  </ul>
+  <p>
+    The ring at the left shows the outcome: a green tick, a half, a red cross, or a gold question
+    mark when Faro is waiting for your answer. Tap the ring to tick off a matrix item or a task.
+    Tap the title to open it. The first time you open Faro after the wake-up alarm, it reads the
+    A list to you.
+  </p>
+
+  <p class="eyebrow" id="money">9</p>
+  <h2>Money</h2>
+  <ol>
+    <li>MONEY tab → <span class="tap">+ Upload a statement</span>. Download a CSV from your online banking first. PDF is not supported.</li>
+    <li>Tap each uncategorized transaction and pick the area of life that paid for it. Faro learns the merchant.</li>
+    <li>Read the screen: the six-month trend (tap a month), the runway (enter your cash on hand), spending by category, income by source, recurring commitments, and the subscriptions Faro found in your statements.</li>
+    <li><span class="tap">+ New savings goal</span> for a trip, a home, a car, or anything else. Record deposits as you make them.</li>
+    <li><span class="tap">Export for your accountant</span> gives a CSV of any range. The search box looks through every month.</li>
+  </ol>
+
+  <p class="eyebrow" id="review">10</p>
+  <h2>The reviews</h2>
+  <ul>
+    <li><b>Clarify</b> — daily, ten minutes, empties the inbox.</li>
+    <li><b>Weekly Review</b> — Sunday at 18:00, thirty minutes, not skippable. Six steps: where every streak stands, what slipped, this week's money, next week, one next action per goal, inbox zero. The banner on Today stays until it is done.</li>
+    <li><b>Eliminate &amp; Automate</b> — monthly. Every recurring series from the last thirty days, biggest time sink first: keep it, dread it, or delegate it. Then the subscriptions, then how much of your income could be earned from anywhere.</li>
+    <li><b>VA queue</b> — every upcoming event tagged <em>Send to VA</em>, each with a one-line handoff ready to send.</li>
+    <li><b>Retrospective</b> — opens on Today the day a chapter closes: what you pulled off, what slipped, what carries forward.</li>
+  </ul>
+
+  <p class="eyebrow" id="settings">11</p>
+  <h2>Settings</h2>
+  <p>Open Settings with the <b>⚙</b> at the top right of Today.</p>
+  <ul>
+    <li><b>The journey</b> — Day 1, total days, destination. Moving Day 1 moves every chapter date; streaks are untouched.</li>
+    <li><b>The sleep contract</b> — wind-down, lights out, wake-up.</li>
+    <li><b>Voice</b> — on or off, test it, and your silent hours. Turning the voice off makes reminders text only.</li>
+    <li><b>Notifications</b> — on the phone, from the first Allow. In a browser, <b>Browser notifications</b> and <b>Send a test</b>.</li>
+    <li><b>Default reminder lead</b>, <b>home</b> and <b>office</b> addresses, <b>theme</b> (system, light, dark).</li>
+    <li><b>Account</b> — sign out, or delete the account. Deleting erases everything Faro holds about you, including its access to your Google Calendar.</li>
+  </ul>
+
+  <h3>Keyboard shortcuts in a browser</h3>
+  <p>
+    <kbd>Y</kbd> <kbd>P</kbd> <kbd>N</kbd> answer the oldest prompt on Today ·
+    <kbd>C</kbd> capture a thought · <kbd>M</kbd> open the Matrix · <kbd>R</kbd> sync the calendar ·
+    <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> the four tabs · <kbd>?</kbd> this list.
+  </p>
+
+  <p class="eyebrow" id="help">12</p>
+  <h2>When something looks wrong</h2>
+  <ul>
+    <li><b>"Google Calendar disconnected."</b> Tap <span class="tap">Reconnect Google</span> on Today and finish the Google screens within five minutes.</li>
+    <li><b>Sign-in fails with "state has expired".</b> The Google screens took longer than five minutes. Start the sign-in again.</li>
+    <li><b>"Already answered."</b> The prompt's ten minutes were up before the tap, so the miss had already been counted. The next prompt is a fresh start.</li>
+    <li><b>No voice when the phone is locked.</b> A closed app cannot speak a full sentence, so each reminder plays a short clip in Faro's voice; the banner carries the details. Open Faro and it speaks the whole line.</li>
+    <li><b>"NO CONNECTION" on Today.</b> You are seeing your day as it was last saved. Reading works; answers wait until you are back online, because each answer must reach Faro exactly once.</li>
+    <li><b>An event is under the wrong goal.</b> Open it, tap the gear, tap the right category. Faro learns the title.</li>
+    <li>Anything else: <a href="index.html#support">write to support</a>.</li>
+  </ul>
+</main>
+
+<footer>
+  © 2026 Faro
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="index.html#support">Support</a>
+</footer>
+
+</body>
+</html>
